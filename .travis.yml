@@ -8,9 +8,6 @@ sudo: false
 git:
   depth: 10
 
-branches:
-  only:
-    - master
 env:
   global:
     - SOURCE_DIR="public"
