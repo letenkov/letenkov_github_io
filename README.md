@@ -1,1 +1,1 @@
-# Letenkov GitHub Webpage
+# Personal blog http://letenkov.github.com
