@@ -1,4 +1,4 @@
-baseURL = "http://letenkov.github.io/"
+baseURL = "https://letenkov.github.io/"
 languageCode = "ru-ru"
 title = "Personal Blog"
 theme = "soon"
