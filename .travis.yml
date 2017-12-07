@@ -36,8 +36,6 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN # This is the authentication which you will setup in the next step in travis-ci dashboard
-  email: eugene@letenkov.ru
-  name: "Eugene Letenkov"
   on:
     branch: master
 
