@@ -25,6 +25,7 @@ install:
 
 # Build the website
 script:
+  - git clone https://github.com/letenkov/hugo-theme-coming-soon ./themes/soon
   - hugo
 
 # Deploy to GitHub pages
