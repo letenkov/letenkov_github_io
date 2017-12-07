@@ -1,3 +1,18 @@
 baseURL = "http://letenkov.github.io/"
 languageCode = "ru-ru"
 title = "Personal Blog"
+theme = "soon"
+
+[params]
+  name = ""
+ 
+[params.Logo]
+  enable = true
+  text = "Letenkov"
+  
+[params.Content]
+  enable = true
+
+[params.Footer]
+  enable = true
+  copyright = "Letenkov"
