@@ -12,6 +12,12 @@ branches:
   only:
     - master
 
+env:
+  global:
+    - SOURCE_DIR="public"
+    - BUILD_BRANCH="source"
+    - DEPLOY_BRANCH="master"
+
 install:
   # Clean and don't fail
   - rm -rf public || exit 0
@@ -27,10 +33,12 @@ script:
 deploy:
   local_dir: public # Default static site output dir for Hugo
   repo: letenkov/letenkov.github.io # This is the slug of the repo you want to deploy your site to
-  target_branch: master # GitHub pages branch to deploy to (in other cases it can be gh-pages)
+  target_branch: source # GitHub pages branch to deploy to (in other cases it can be gh-pages)
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN # This is the authentication which you will setup in the next step in travis-ci dashboard
+  name: "Eugene Letenkov"
+  email: "eugene@letenkov.ru"
   on:
-    branch: source
+    branch: master
 
